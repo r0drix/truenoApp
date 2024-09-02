@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@picocss/pico@2/css/pico.cyan.min.css" />
+  <title>TruenoApp</title>
+</head>
+<body class="container">
+  <nav>
+    <ul>
+      <li><h1>TruenoApp</h1></li>
+    </ul>
+    <ul>
+      <li><a href="index.html">Cargar</li>
+      <li><a href="mostrar.html">Mostrar</a></li>
+      <li><a href="buscar.html">Buscar </a></li>
+    </ul>
+  </nav>
+
+  <main class="container">
+    <hgroup>
+      <h2>Orden</h2>
+      <h3>Reparaciones</h3>
+    </hgroup>
+
+<!-- de aqui para abajo el Formulario-->
+
+    <form id="orden">
+      <label for="nombreApellido">
+        Nombre y Apellido
+        <input type="text" id= "nombreApellido" name="nombreApellido" placeholder="Nombre y Apellido del cliente" autocomplete="given-name" required>
+      </label>
+
+<!---->
+
+      <label for="contacto">
+        Numero de Contacto
+        <input type="tel" id="contacto" name="contacto" placeholder="Numero de contacto del cliente" autocomplete="tel" required>
+      </label>
+
+<!----->
+      <label for="modeloReparacion">
+        Modelo 
+        <input type="text" id="modeloReparacion" name="modelo" placeholder="Modelo a Reparar" required>
+      </label>
+    
+
+
+      <label for="problema">
+        Problema
+        <input type="text" id="problema" name="Problema" placeholder="problema a reparar " required>
+      </label>
+
+      <label for="presupuesto">
+        Presupuesto
+        <input type="text" id="presupuesto" name="presupuesto" placeholder="Presupuesto de la Reparacion" required>
+      </label>
+
+      <button type="submit"> Registrar  </button>
+    </form>
+    <script type="module" src="app.js"></script>
+  </main>
+</body>
+</html>
